@@ -5,43 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reading Webtoons - My hobby 📗</title>
+    <style>
+      body {
+        background: #00d564;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10px;
+        color: white;
+      }
+
+      footer a {
+        color: antiquewhite;
+      }
+
+      .theme-button {
+        display: block;
+        margin: 10px auto;
+        background: black;
+        color: antiquewhite;
+        font-size: 12px;
+        padding: 5px 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .theme-button:hover {
+        background: antiquewhite;
+        color: black;
+        border: 1px solid antiquewhite;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .webtoon-button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #00d564;
+        background: antiquewhite;
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .webtoon-button:hover {
+        cursor: pointer;
+        background: #00d564;
+        border: 1px solid antiquewhite;
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <button>Dark Theme</button>
-    <h1>Webtoons</h1>
-    <h2>Comics for the Digital Age</h2>
-    <div class="image-gallery">
-      <a href="https://www.webtoons.com/en/">
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/798/original/webtoon-logo.png?1670794994"
-          alt=""
-      /></a>
+    <button class="theme-button">Dark Theme</button>
+    <div class="container">
+      <h1>Webtoons</h1>
+      <h2>Comics for the Digital Age</h2>
+      <div class="image-gallery">
+        <a href="https://www.webtoons.com/en/">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/798/original/webtoon-logo.png?1670794994"
+            alt=""
+        /></a>
 
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/814/original/webtoon-homepage.jpeg?1670796554"
-        alt=""
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/806/original/persephone_hades%282%29.png?1670795520"
-        alt=""
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/815/original/true_beauty%281%29.jpg?1670796565"
-        alt=""
-      />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/814/original/webtoon-homepage.jpeg?1670796554"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/806/original/persephone_hades%282%29.png?1670795520"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/815/original/true_beauty%281%29.jpg?1670796565"
+          alt=""
+        />
+      </div>
+      <p>
+        <span class="main-info">
+          Webtoons (Korean: 웹툰), are a type of digital comic that originated
+          in South Korea usually meant to be read on smartphones.
+        </span>
+        While webtoons were mostly unknown outside of Korea during their
+        inception, there has been a surge in popularity internationally thanks
+        in great part to the rise in popularity of manhwa and the fact that most
+        manhwa are released as webtoons
+        <a href="https://en.wikipedia.org/wiki/Webtoon" target="_blank">Wiki</a>
+      </p>
+      <button class="webtoon-button">Read Webtoons</button>
     </div>
-    <p>
-      <span class="main-info">
-        Webtoons (Korean: 웹툰), are a type of digital comic that originated in
-        South Korea usually meant to be read on smartphones.
-      </span>
-      While webtoons were mostly unknown outside of Korea during their
-      inception, there has been a surge in popularity internationally thanks in
-      great part to the rise in popularity of manhwa and the fact that most
-      manhwa are released as webtoons
-      <a href="https://en.wikipedia.org/wiki/Webtoon" target="_blank">Wiki</a>
-    </p>
-    <button>Read Webtoons</button>
     <footer>
       <a
         href="https://github.com/nianokia/webtoons-landing-page"
