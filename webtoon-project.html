@@ -47,6 +47,39 @@
         cursor: pointer;
       }
 
+      .dark {
+        background: #092d19;
+      }
+
+      .dark a {
+        color: antiquewhite;
+      }
+
+      .dark .theme-button {
+        background: antiquewhite;
+        color: #092d19;
+      }
+
+      .dark .theme-button:hover {
+        background: #00d564;
+        color: black;
+        border: 1px solid #00d564;
+      }
+
+      .dark .container {
+        background: #156639;
+        color: white;
+      }
+
+      .dark .webtoon-button {
+        border: 1px solid #156639;
+      }
+
+      .dark .webtoon-button:hover {
+        background: #092d19;
+        border: 1px solid #092d19;
+      }
+
       .container {
         max-width: 600px;
         margin: 20px auto;
@@ -118,7 +151,7 @@
     </style>
   </head>
   <body>
-    <button class="theme-button">Dark Theme</button>
+    <button class="theme-button">Change Theme</button>
     <div class="container">
       <h1>Webtoons</h1>
       <h2>Comics for the Digital Age</h2>
@@ -172,5 +205,20 @@
       >
       by Nia Wright
     </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
