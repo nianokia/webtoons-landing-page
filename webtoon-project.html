@@ -18,10 +18,6 @@
         text-align: center;
       }
 
-      img {
-        max-width: 100%;
-      }
-
       footer {
         text-align: center;
         margin-top: 10px;
@@ -60,6 +56,8 @@
       }
 
       .webtoon-logo {
+        display: block;
+        margin: 0 auto;
         transition: all 125ms ease-in-out;
       }
 
@@ -68,12 +66,36 @@
         opacity: 0.7;
       }
 
+      .image-gallery {
+        display: grid;
+        margin: 10px 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
       .image-with-no-link {
         transition: all 125ms ease-in-out;
       }
 
       .image-with-no-link:hover {
         transform: scale(0.95);
+      }
+
+      .summary {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 15px;
+      }
+
+      .main-info {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
       }
 
       .webtoon-button {
@@ -100,41 +122,46 @@
     <div class="container">
       <h1>Webtoons</h1>
       <h2>Comics for the Digital Age</h2>
+      <a href="https://www.webtoons.com/en/">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/798/original/webtoon-logo.png?1670794994"
+          alt="the app icon for Line Webtoon"
+          class="webtoon-logo"
+          width="400px"
+      /></a>
       <div class="image-gallery">
-        <a href="https://www.webtoons.com/en/">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/798/original/webtoon-logo.png?1670794994"
-            alt=""
-            class="webtoon-logo"
-        /></a>
-
         <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/814/original/webtoon-homepage.jpeg?1670796554"
-          alt=""
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/855/original/spirit_fingers_%284%29.jpg?1670802645"
+          alt="comic panel of the webtoon Spirit Fingers"
           class="image-with-no-link"
         />
         <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/806/original/persephone_hades%282%29.png?1670795520"
-          alt=""
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/853/original/persephone_hades%284copy%29.jpg?1670802633"
+          alt="comic panel of the webtoon Lore Olympus"
           class="image-with-no-link"
         />
         <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/815/original/true_beauty%281%29.jpg?1670796565"
-          alt=""
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/847/original/unholy-blood.jpg?1670801597"
+          alt="comic panel of the webtoon Unholy Blood"
+          class="image-with-no-link"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/861/original/lets-play%282%29.jpg?1670803429"
+          alt="comic panel of the webtoon Let's Play"
           class="image-with-no-link"
         />
       </div>
-      <p>
-        <span class="main-info">
+      <div class="summary">
+        <div class="main-info">
           Webtoons (Korean: 웹툰), are a type of digital comic that originated
           in South Korea usually meant to be read on smartphones.
-        </span>
+        </div>
         While webtoons were mostly unknown outside of Korea during their
         inception, there has been a surge in popularity internationally thanks
         in great part to the rise in popularity of manhwa and the fact that most
         manhwa are released as webtoons
         <a href="https://en.wikipedia.org/wiki/Webtoon" target="_blank">Wiki</a>
-      </p>
+      </div>
       <button class="webtoon-button">Read Webtoons</button>
     </div>
     <footer>
