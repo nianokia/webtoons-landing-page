@@ -51,12 +51,12 @@
       .theme-button {
         display: block;
         margin: 10px auto;
-        background: black;
+        background: #092d19;
         color: antiquewhite;
         font-family: "Hind Siliguri", sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         padding: 5px 10px;
-        border: 1px solid black;
+        border: 1px solid #092d19;
         border-radius: 10px;
         transition: all 150ms ease-in-out;
       }
@@ -104,6 +104,7 @@
 
       .container {
         max-width: 700px;
+        min-width: 600px;
         margin: 20px auto;
         background: white;
         padding: 20px;
@@ -163,6 +164,7 @@
         margin: 0 auto;
         border: 1px solid antiquewhite;
         background: antiquewhite;
+        color: #092d19;
         font-family: "Hind Siliguri", sans-serif;
         font-size: 22px;
         border-radius: 10px;
@@ -170,11 +172,20 @@
         transition: all 150ms ease-in-out;
       }
 
+      .webtoon-button a {
+        text-decoration: none;
+        color: #0f3443;
+      }
+
+      .webtoon-button a:hover {
+        color: white;
+      }
+
       .webtoon-button:hover {
         cursor: pointer;
         background: #00d564;
         border: 1px solid antiquewhite;
-        color: white;
+        color: #092d19;
       }
     </style>
   </head>
@@ -183,7 +194,11 @@
     <div class="container">
       <h1>Webtoons</h1>
       <h2>Comics for the Digital Age</h2>
-      <a href="https://www.webtoons.com/en/">
+      <a
+        href="https://www.webtoons.com/en/"
+        title="Webtoon App"
+        target="_blank"
+      >
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/798/original/webtoon-logo.png?1670794994"
           alt="the app icon for Line Webtoon"
@@ -224,7 +239,14 @@
         />
       </div>
 
-      <button class="webtoon-button">Read Webtoons</button>
+      <button class="webtoon-button">
+        <a
+          href="https://tapas.io/"
+          title="Read Webtoons on Tapas!"
+          target="_blank"
+          >Read Webtoons</a
+        >
+      </button>
     </div>
     <footer>
       <a
@@ -239,11 +261,7 @@
       function changeTheme() {
         let body = document.querySelector("body");
 
-        if (body.classList.contains("dark")) {
-          body.classList.remove("dark");
-        } else {
-          body.classList.add("dark");
-        }
+        body.classList.toggle("dark");
       }
 
       let themeButton = document.querySelector(".theme-button");
